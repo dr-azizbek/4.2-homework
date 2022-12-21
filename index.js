@@ -44,64 +44,64 @@ stringConcat([1, 2, 3, 4, 5, 6])
 // }, {});
 // console.log(result);
 //uchinchi
-// function totalVotes(arr) {
-//   const sum=0
-//   for(let i=0;i<arr.length;++i){
-//     if(arr[i]==true){
-//       sum+= arr[i]
-//     }
-//   }    
-//   console.log(sum)
-// }
-// var voters = [
-//   {name:'Bob' , age: 30, voted: true},
-//   {name:'Jake' , age: 32, voted: true},
-//   {name:'Kate' , age: 25, voted: false},
-//   {name:'Sam' , age: 20, voted: false},
-//   {name:'Phil' , age: 21, voted: true},
-//   {name:'Ed' , age:55, voted:true},
-//   {name:'Tami' , age: 54, voted:true},
-//   {name: 'Mary', age: 31, voted: false},
-//   {name: 'Becky', age: 43, voted: false},
-//   {name: 'Joey', age: 41, voted: true},
-//   {name: 'Jeff', age: 30, voted: true},
-//   {name: 'Zack', age: 19, voted: false}
-// ];
-// console.log(totalVotes(voters));
-
 function totalVotes(arr) {
   let sum = 0
-  arr.forEach((element) => {
-    if (element.voted == true) {
-      sum++;
+  for (let i = 0; i < arr.length; ++i) {
+    if (arr[i].voted == true) {
+      sum++
     }
-  });
-  return sum
+  }
+  console.log(sum)
 }
-
 let voters = [
-  { name: "Bob", age: 30, voted: true },
-  { name: "Jake", age: 32, voted: true },
-  { name: "Kate", age: 25, voted: false },
-  { name: "Sam", age: 20, voted: false },
-  { name: "Phil", age: 21, voted: true },
-  { name: "Ed", age: 55, voted: true },
-  { name: "Tami", age: 54, voted: true },
-  { name: "Mary", age: 31, voted: false },
-  { name: "Becky", age: 43, voted: false },
-  { name: "Joey", age: 41, voted: true },
-  { name: "Jeff", age: 30, voted: true },
-  { name: "Zack", age: 19, voted: false },
+  { name: 'Bob', age: 30, voted: true },
+  { name: 'Jake', age: 32, voted: true },
+  { name: 'Kate', age: 25, voted: false },
+  { name: 'Sam', age: 20, voted: false },
+  { name: 'Phil', age: 21, voted: true },
+  { name: 'Ed', age: 55, voted: true },
+  { name: 'Tami', age: 54, voted: true },
+  { name: 'Mary', age: 31, voted: false },
+  { name: 'Becky', age: 43, voted: false },
+  { name: 'Joey', age: 41, voted: true },
+  { name: 'Jeff', age: 30, voted: true },
+  { name: 'Zack', age: 19, voted: false }
 ];
-console.log(`Uchinchini javobi: ` + totalVotes(voters)); // 7
+totalVotes(voters)
+
+// function totalVotes(arr) {
+//   let sum = 0
+//   arr.forEach((element) => {
+//     if (element.voted == true) {
+//       sum++;
+//     }
+//   });
+//   return sum
+// }
+
+// let voters = [
+//   { name: "Bob", age: 30, voted: true },
+//   { name: "Jake", age: 32, voted: true },
+//   { name: "Kate", age: 25, voted: false },
+//   { name: "Sam", age: 20, voted: false },
+//   { name: "Phil", age: 21, voted: true },
+//   { name: "Ed", age: 55, voted: true },
+//   { name: "Tami", age: 54, voted: true },
+//   { name: "Mary", age: 31, voted: false },
+//   { name: "Becky", age: 43, voted: false },
+//   { name: "Joey", age: 41, voted: true },
+//   { name: "Jeff", age: 30, voted: true },
+//   { name: "Zack", age: 19, voted: false },
+// ];
+// console.log(`Uchinchini javobi: ` + totalVotes(voters)); // 7
 
 
 
 //tortinchi
 // function shoppingSpree(arr) {
 //   let price = 0
-//   for (let i = 0; i < price.length; ++i) {
-//     price += price[i]
+//   for (let i = 0; i < arr.length; ++i) {
+//     price += arr[i].pr
 //     return price
 
 //   }
